@@ -1,5 +1,6 @@
 .env
-data/
+data/pdfs/
+data/evals.db
 __pycache__/
 *.pyc
 *.pyo
@@ -7,3 +8,5 @@ __pycache__/
 dist/
 *.egg-info/
 .pytest_cache/
+frontend/node_modules/
+frontend/dist/
