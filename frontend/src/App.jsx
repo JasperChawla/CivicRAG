@@ -9,7 +9,7 @@ import LatencyBar from './components/LatencyBar'
 import EvalDashboard from './components/EvalDashboard'
 import QueryHistoryDrawer from './components/QueryHistoryDrawer'
 
-const API_BASE = 'http://localhost:8000'
+const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:8000'
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('query')
