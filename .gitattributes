@@ -1,0 +1,7 @@
+data/chroma_db/chroma.sqlite3 filter=lfs diff=lfs merge=lfs -text
+data/bm25_index.pkl filter=lfs diff=lfs merge=lfs -text
+data/chroma_db/59bda99c-6b9b-49ce-87b6-340b21544688/data_level0.bin filter=lfs diff=lfs merge=lfs -text
+frontend/node_modules/**/*.exe filter=lfs diff=lfs merge=lfs -text
+frontend/node_modules/**/*.node filter=lfs diff=lfs merge=lfs -text
+frontend/node_modules/**/*.wasm filter=lfs diff=lfs merge=lfs -text
+frontend/node_modules/**/*.zip filter=lfs diff=lfs merge=lfs -text
