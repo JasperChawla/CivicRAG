@@ -17,6 +17,4 @@ USER user
 
 EXPOSE 7860
 
-ENV PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python
-
 CMD ["uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", "7860"]

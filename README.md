@@ -1,7 +1,7 @@
 ---
 title: CivicRAG
 emoji: ⚖️
-colorFrom: red
+colorFrom: orange
 colorTo: red
 sdk: docker
 app_port: 7860
