@@ -19,7 +19,7 @@ from pydantic import BaseModel
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from retrieval.hybrid import HybridRetriever
-from storage.db import get_collection
+from storage.db import get_chunk_count
 
 load_dotenv()
 
@@ -378,8 +378,7 @@ async def _stream_query(request: QueryRequest) -> AsyncGenerator[str, None]:
 # ---------------------------------------------------------------------------
 @app.get("/health")
 def health():
-    collection = get_collection()
-    return {"status": "ok", "chunks_indexed": collection.count()}
+    return {"status": "ok", "chunks_indexed": get_chunk_count()}
 
 
 @app.post("/query")

@@ -22,6 +22,10 @@ def get_collection():
     return _collection
 
 
+def get_chunk_count() -> int:
+    return get_collection().count()
+
+
 def _chunk_id(bill_number: str, chunk_index: int) -> str:
     return f"{bill_number}__{chunk_index}"
 
